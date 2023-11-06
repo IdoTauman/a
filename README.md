@@ -8,6 +8,7 @@
 - End loop (loops go one until the selected index is 0 when the loop ends): aaaaa
 - Move pointer to the right (max index is 9999, default 0): aaaaaa
 - Move pointer to the left (min 0): aaaaaaa 
+
 Please note that there needs to be an empty line after the last line
 
 code.txt contains an example hello world program
