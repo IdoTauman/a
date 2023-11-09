@@ -27,6 +27,8 @@ def ConvertInstructionsToCode(instructions):
     mainArr = [0 for x in range(10000)]
     ptrIndex = 0
 
+    loopIndexes = []
+
     i = 0
     while i < len(instructions):
         instruction = instructions[i]
@@ -55,11 +57,13 @@ def ConvertInstructionsToCode(instructions):
             print(chr(mainArr[ptrIndex]))
 
         elif instruction == 4 * "a":
-            lastLoopIndex = i
+            loopIndexes.append(i)
 
         elif instruction == 5 * "a":
             if not mainArr[ptrIndex] == 0:
-                i = lastLoopIndex
+                i = loopIndexes[-1]
+            else:
+                loopIndexes.pop(-1)
 
         elif instruction == 6 * "a":
             try:
