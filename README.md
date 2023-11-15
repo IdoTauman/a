@@ -1,5 +1,8 @@
 # a
 
+## How does this work?
+This is a Brainfuck inspired language, that uses an array of 10000 values with a pointer that selects one of the values and it uses the Brainfuck instrction set.
+
 ## Syntax:
 - Increment (max 255): a
 - Decrement (min 0): aa
