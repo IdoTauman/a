@@ -2,17 +2,6 @@ filePath = input("Path: ")
 
 code = open(filePath, "r")
 
-instructionList = {
-    1: "add",
-    2: "substract",
-    3: "output",
-    4: "start loop",
-    5: "end loop",
-    6: "move right",
-    7: "move left",
-}
-
-
 class ArrayValueOutOfRange(Exception):
     # Raised when a value is higher than 255 or lower than 0
     pass
