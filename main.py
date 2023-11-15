@@ -77,18 +77,17 @@ def ConvertInstructionsToCode(instructions):
         i += 1
 
 
-def Compile(code=code):
-    global instructionList
+def Compile(code):
 
     lineArr = [x for x in code]
     instructions = []
 
-    for line in enumerate(lineArr):
+    for line in lineArr:
         for n in range(1, 8):
-            if line[1] == n * "a" + "\n":
+            if line == n * "a" + "\n":
                 instructions.append(n * "a")
 
-    ConvertInstructionsToCode(instructions=instructions)
+    ConvertInstructionsToCode(instructions)
 
 
 Compile(code)
